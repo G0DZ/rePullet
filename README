@@ -1,0 +1,15 @@
+Инструкция по сборке и запуску:
+  1. Скачать проект из репозитория;
+  2. Установить зависимости проекта командой pip install –r requirements.txt
+  3. Запустить сервер MongoDB: mongod;
+  4. Запустить Flask-server командой python3 rePullet/__init__.py
+  5. Перейти в браузере по адресу: http://localhost:5000.
+  6. В корневом каталоге создать файл config.py вида:
+    class Config:
+      MONGOHOST = 'localhost'
+      MONGOPORT = 27017
+      MONGONAME = 'pullet'
+      SECRET_KEY = 'your key'
+      consumer_key = 'GitHub app key'
+      consumer_secret = 'GitHub app secret'
+      scope = {'scope': 'user:email'}
