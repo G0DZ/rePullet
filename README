@@ -13,4 +13,5 @@
       scope = {'scope': 'user:email'}
   
   5. Запустить Flask-server командой python3 rePullet/__init__.py
-  6. Перейти в браузере по адресу: http://localhost:5000.
+  6. Перейти в браузере по адресу: http://localhost:5000
+
